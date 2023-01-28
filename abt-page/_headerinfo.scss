@@ -1,0 +1,47 @@
+.headerinfor{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    z-index: 200;
+    @media(max-width: 600px),(max-width: 400px){
+        background-color: black;
+    }
+    h3{
+        color: rgb(4, 110, 25);
+        text-align: center;
+        font-size: 2.3rem;
+        -webkit-text-stroke: 1px #f5f7f8;
+    }
+    p{
+        color: white;
+        text-align: center;
+    }
+    .verses-wrapper{
+        margin-top: 1rem;
+        width: 60%;
+        background-color: rgba(194, 150, 239, 0.722);
+        position: absolute;
+        left: 21%;
+        padding: .3rem .2rem;
+        border: 2px solid rgb(24, 24, 24);
+        border-style: dashed;
+        @media(max-width: 600px),(max-width: 400px){
+            left: 5%;
+            width: 90%;
+            margin-top: 4rem;
+        }
+        .verses{
+            gap: 1.4rem;
+            align-items: center;
+            background-color: rgb(250, 250, 58);
+            @media(max-width: 600px),(max-width: 400px){
+                gap: .3rem;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            p{
+                color: black;
+            }
+        }
+    }
+}

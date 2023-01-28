@@ -30,7 +30,7 @@ img{
             gap: 2rem;
             position: fixed;
             position: sticky;
-            background-color: black !important;;
+            background-color: black  !important;;
             z-index: 99999;
             top: 0;
             padding: .7rem 4rem;
@@ -170,7 +170,8 @@ img{
                 .line{
                     width: 1px;
                     height: 50px;
-                    background-color: rgb(191, 192, 193);
+                    margin-right: 1rem;
+                    background-color: rgb(193, 191, 193);
                     margin-left: .7rem;
                 }
                 svg{
