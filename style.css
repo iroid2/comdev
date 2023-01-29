@@ -757,6 +757,35 @@ body {
   background-color: blue;
 }
 
+.mobo-ham-menu {
+  visibility: hidden;
+}
+
+@media (max-width: 600px), (max-width: 400px) {
+  .mobo-ham-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 14;
+    z-index: 100;
+    background-color: rebeccapurple;
+    width: 100%;
+    padding: .3rem 0;
+  }
+}
+
+.mobo-ham-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.mobo-ham-menu a:hover {
+  font-weight: bold;
+}
+
 img {
   width: 90%;
 }
@@ -1195,5 +1224,9 @@ img {
 
 .normal {
   background-color: red;
+}
+
+.active {
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.mobo-ham-menu{
+    visibility: hidden;
+    @media(max-width: 600px),(max-width: 400px){
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 14;
+        z-index: 100;
+        background-color: rebeccapurple;
+        width: 100%;
+        padding: .3rem 0;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            font-weight: bold;
+        }
+    }
+    
+    
+}
