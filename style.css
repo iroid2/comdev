@@ -638,6 +638,7 @@ h2 {
 .filter-menu li:hover,
 .filter-menu li.current {
   background: #ff7979;
+  margin: 0;
 }
 
 .filter-item li {
@@ -684,6 +685,17 @@ h2 {
   h2 {
     font-size: 270%;
   }
+}
+
+.gallery a {
+  text-decoration: none;
+  background-color: #eb4d4b;
+  width: 130px;
+  color: white;
+  padding: 1rem;
+  position: absolute;
+  right: 55%;
+  margin-top: 24rem;
 }
 
 .contact-us {
