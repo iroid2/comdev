@@ -237,7 +237,6 @@ h5 {
     gap: .3rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: rebeccapurple;
     width: 100%;
     margin-top: .4rem;
     font-size: 15px;
@@ -248,7 +247,6 @@ h5 {
   .headerinfor .verses-wrapper .verses {
     gap: .3rem;
     font-size: 15px;
-    background-color: #f81e2d;
     margin-top: 1rem;
   }
 }
