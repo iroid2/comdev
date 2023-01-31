@@ -199,7 +199,7 @@ h5 {
   color: #046e19;
   text-align: center;
   font-size: 2.3rem;
-  -webkit-text-stroke: 1px #f5f7f8;
+  -webkit-text-stroke: .3px #f5f7f8;
 }
 
 .headerinfor p {
@@ -209,18 +209,15 @@ h5 {
 
 .headerinfor .verses-wrapper {
   margin-top: 1rem;
-  width: 60%;
-  background-color: rgba(194, 150, 239, 0.722);
+  width: 90%;
   position: absolute;
-  left: 21%;
+  left: 6%;
   padding: .3rem .2rem;
-  border: 2px solid #181818;
-  border-style: dashed;
 }
 
 @media (max-width: 600px), (max-width: 400px) {
   .headerinfor .verses-wrapper {
-    left: 5%;
+    left: 6%;
     width: 90%;
     margin-top: 4rem;
   }
@@ -231,7 +228,8 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fafa3a;
+  border: none;
+  margin-top: 2rem;
 }
 
 @media (max-width: 600px), (max-width: 400px) {
@@ -239,15 +237,43 @@ h5 {
     gap: .3rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    background-color: rebeccapurple;
+    width: 100%;
+    margin-top: .4rem;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 370px), (max-width: 100px) {
+  .headerinfor .verses-wrapper .verses {
+    gap: .3rem;
+    font-size: 15px;
+    background-color: #f81e2d;
+    margin-top: 1rem;
   }
 }
 
 .headerinfor .verses-wrapper .verses p {
-  color: black;
+  color: white;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: 'Kanit', sans-serif;
+}
+
+@media (max-width: 370px), (max-width: 100px) {
+  .headerinfor .verses-wrapper .verses p {
+    gap: .3rem;
+    font-size: 15px;
+    background-color: #f81e2d;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 300px), (max-width: 100px) {
+  .headerinfor .verses-wrapper .verses p {
+    font-size: 15px;
+    background-color: #f81e2d;
+  }
 }
 
 .contact-us {
@@ -653,6 +679,16 @@ body {
   .hero-sectn img {
     width: 100%;
   }
+}
+
+.hero-sectn .overal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  top: 0;
+  left: 0;
+  background-color: black;
 }
 
 .hero-sectn h1 {

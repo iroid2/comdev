@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import"global";
+@import"more-details";
+@import"headerinfo";
+@import"contact";
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    @media(max-width: 600px),(max-width: 400px){
+        padding: 0;
+        width: 100%;
+    }
+}
+.about-navBar{
+    width: 100%;
+    position: absolute;
+    position: fixed;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.601);
+    z-index: 1300;
+    background-color: rgba(0, 0, 0, 0.672);
+
+    @media(max-width: 600px),(max-width: 400px){
+        padding: .1rem 0rem;
+        width: 100%;
+        position: fixed;
+    }
+    .left-abt-nav{
+        width: 60%;
+        gap: 2rem;
+        padding: .1rem 2rem;
+        @media(max-width: 600px),(max-width: 400px){
+            width: 100%;
+            justify-content: space-between;
+            padding: .1rem .4rem;
+        }
+        .logo-sectn{
+            width: 30%;
+            @media(max-width: 600px),(max-width: 400px){
+                width: 100%;
+                justify-content: space-between;
+            }
+            img{
+                width: 92px;
+                z-index: 200;
+                @media(max-width: 600px),(max-width: 400px){
+                    width: 15%;
+                    justify-content: center;
+                }
+            }
+            svg{
+                display: none;
+                @media(max-width: 600px),(max-width: 400px){
+                    display: block;
+                }
+            }
+        }
+        .nav-links{
+            gap: 2rem;
+            @media(max-width: 600px),(max-width: 400px){
+                display: none;
+            }
+            .home{
+                border: 2px solid rgb(205,33,29);
+                padding: .4rem .8rem;
+                color: rgb(205,33,29);
+                border-radius: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: rgb(205,33,29);
+                }
+                @media(max-width: 600px){
+                    display: none;
+                }
+            
+            }
+        }
+
+    }
+    .right-abt-nav{
+        width: 20%;
+        gap: 1rem;
+        border-left: 1px solid white;
+        @media(max-width: 600px),(max-width: 400px){
+            display: none;
+        }
+    }
+}
+.donate-hero{
+    width: 100%;
+    color: white;
+    height: 100%;
+    @media(max-width: 600px),(max-width: 400px){
+        height: 100vh
+    }
+    img{
+        @media(max-width: 600px),(max-width: 400px){
+            
+        }
+    }
+
+    .donate-card{
+        background-color: rgba(0, 79, 128, 0.772);
+        position: absolute;
+        border-radius: 5px;
+        top: 32%;
+        left: 30%;
+        width: 40%;
+        padding: 3rem 2rem;
+        text-align: center;
+        @media(max-width: 600px),(max-width: 400px){
+            top: 13%;
+            left: 1%;
+            position: absolute;
+            width: 90%;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        h1{
+            font-size: 2rem;
+            @media(max-width: 600px),(max-width: 400px){
+                font-size: 1.5rem;
+            }
+        }
+        .donate-menu{
+            width: 100%;
+            flex-direction: column;
+            position: relative;
+            padding: .7rem 1rem;
+            input{
+                padding: .4rem 3rem;
+            }
+            .amt{
+                width: 40px;
+                position: absolute;
+                padding: .2rem .8rem;
+                top: .76rem;
+                z-index: 1200;
+                left: 22%;
+                font-size: .7rem;
+                background-color: rgba(128, 128, 128, 0.668);
+                color: black;
+                span{
+                    font-size: 1.2rem;
+                    color: rgb(16, 13, 221);
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    text-align: center;
+                }
+            }
+            .currency{
+                position: absolute;
+                top: 1rem;
+                padding: .56rem .4rem;
+                top: .76rem;
+                right: 22%;
+                font-size: .7rem;
+                background-color: rgba(128, 128, 128, 0.689);
+            }
+            .bundle{
+                width: 45%;
+                .box{
+                    gap: .5rem;
+                    background-color: red;
+                    padding: .1rem;
+                    p{
+                        font-size: .7rem;
+                    }
+                    .box-icon{
+                        width: 8%;
+                        padding: 8px 5px;
+                        background-color: #fff;
+                    }
+                }
+                svg{
+                    position: absolute;
+                    top: 2.5rem;
+                    left: 29.4%;
+                    font-weight: bold;
+                }
+            }
+            .donate-btns{
+                width: 40%;
+                gap: 1rem;
+                padding-top: .3rem;
+                a{
+                    width: 50%;
+                    button{
+                        width: 100%;
+                        background-color: rgba(53, 157, 243, 0.853);
+                        color: white;
+                        border: none;
+                        border-radius: .2px;
+                        font-weight: bold;
+                    }
+                }
+                
+                img{
+                    width: 25px;
+                }
+            }
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
